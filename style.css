@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 500vh;
+  background: linear-gradient(to bottom, #000 0%, #000 20%, #fff 20%, #fff 100%);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  height: 95vh;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+.top__part {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.top__part__item {
+  color: #8B8E99;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  font-family: Poppins;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 70%;
+  letter-spacing: 0%;
+}
+.top__part__item .mohid__parent {
+  position: relative;
+}
+.top__part__item .Mohid {
+  left: 23%;
+  color: white;
+  position: absolute;
+}
+.top__part__item img {
+  width: 30px; /* yoki kerakli px */
+  height: auto;
+}
+
+.card__part {
+  margin-top: 10px;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.card__part .text__part {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.card__part .text__part h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+.card__part .text__part p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 110%;
+  letter-spacing: 0%;
+  color: #8B8E99;
+}
+.card__part .text__part input {
+  position: absolute;
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 20px 10px;
+  width: 50%;
+  font-size: 15px;
+}
+.card__part .text__part i {
+  width: 30px;
+  height: auto;
+  color: #000;
+  position: absolute;
+  left: 5%;
+}
+.card__part .text__part button {
+  position: absolute;
+  width: 25%;
+  height: 70%;
+  right: 5%;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px 5px 5px 5px;
+  background-color: rgb(114, 114, 199);
+  color: white;
+}
+.card__part .text__part .input__part {
+  position: absolute;
+  width: 90%;
+  height: 7%;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  top: 75%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10;
+}
+.card__part .img__part {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.main__container {
+  margin-top: 21.5px;
+  width: 100%;
+  height: 40vh;
+  background-color: white;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.main__container .main__items {
+  width: 40%;
+  height: 75%;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(240, 240, 240);
+  border: none;
+}
+.main__container .main__items img {
+  padding: 30px;
+}
+.main__container .main__items .txt {
+  padding: 20px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__container .main__items .txt h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.main__container .main__items .txt p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+  color: #8B8E99;
+}
+
+.product__wrapper {
+  margin-top: 100px;
+  width: 100%;
+  height: 130vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.product__wrapper .product__title {
+  margin-top: 0px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.product__wrapper .product__title h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.product__wrapper .product__title p {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #5e4c91;
+}
+.product__wrapper .product__item {
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  gap: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product__wrapper .product__item .product__i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px 15px 15px 15px;
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+}
+.product__wrapper .product__item .product__i .txt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.product__wrapper .product__item .product__i .txt h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.product__wrapper .product__item .product__i .txt h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.product__wrapper .product__item .product__i .txt .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.product__wrapper .product__item .product__i .txt .price h2 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.product__wrapper .product__item .product__i .txt .price h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  text-decoration: line-through;
+  color: #000000;
+  opacity: 50%;
+}
+.product__wrapper button {
+  width: 17%;
+  height: 100px;
+  background-color: rgb(43, 67, 163);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
