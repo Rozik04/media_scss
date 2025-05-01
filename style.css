@@ -25,6 +25,31 @@ body {
   flex-direction: row;
   gap: 70px;
 }
+@media screen and (max-width: 768px) {
+  .top__part .top__part {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .top__part .top__part__items {
+    display: none;
+  }
+  .top__part body {
+    background: linear-gradient(to bottom, #000 0%, #000 10%, #fff 10%, #fff 100%);
+  }
+}
+
+.top__part__items {
+  color: #8B8E99;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  font-family: Poppins;
+  font-weight: 100;
+  font-size: 10px;
+  line-height: 70%;
+  letter-spacing: 0%;
+}
 
 .top__part__item {
   color: #8B8E99;
@@ -38,16 +63,17 @@ body {
   line-height: 70%;
   letter-spacing: 0%;
 }
-.top__part__item .mohid__parent {
-  position: relative;
+.top__part__item .mhd__div {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
 }
 .top__part__item .Mohid {
-  left: 23%;
   color: white;
-  position: absolute;
 }
 .top__part__item img {
-  width: 30px; /* yoki kerakli px */
+  width: 30px;
   height: auto;
 }
 
@@ -110,7 +136,7 @@ body {
   right: 5%;
   font-size: 20px;
   border: none;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 5px;
   background-color: rgb(114, 114, 199);
   color: white;
 }
@@ -119,20 +145,65 @@ body {
   width: 90%;
   height: 7%;
   background-color: #ffffff;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   top: 75%;
   left: 0%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10;
+  gap: 10px;
 }
 .card__part .img__part {
   width: 50%;
   height: 100%;
   display: grid;
   place-items: center;
+}
+@media screen and (max-width: 768px) {
+  .card__part {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+  }
+  .card__part .text__part,
+  .card__part .img__part {
+    margin-top: -15px;
+    width: 90%;
+    height: auto;
+  }
+  .card__part .text__part {
+    gap: 20px;
+  }
+  .card__part .text__part h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .card__part .text__part p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .card__part .text__part input {
+    width: 70%;
+    font-size: 14px;
+    padding: 12px 8px;
+  }
+  .card__part .text__part button {
+    width: 20%;
+    height: 60%;
+    font-size: 16px;
+  }
+  .card__part .text__part .input__part {
+    width: 95%;
+    height: 50px;
+    top: auto;
+    position: relative;
+    margin-top: 20px;
+  }
+  .card__part .text__part i {
+    left: 5%;
+    font-size: 16px;
+  }
 }
 
 .main__container {
@@ -155,12 +226,14 @@ body {
   justify-content: center;
   flex-direction: row;
   gap: 5px;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   background-color: rgb(240, 240, 240);
   border: none;
 }
 .main__container .main__items img {
   padding: 30px;
+  width: 100px;
+  height: auto;
 }
 .main__container .main__items .txt {
   padding: 20px;
@@ -175,18 +248,47 @@ body {
   font-weight: 700;
   font-size: 34px;
   line-height: 125%;
-  letter-spacing: 0%;
   color: #000000;
 }
 .main__container .main__items .txt p {
   font-family: Poppins;
   font-weight: 400;
   font-size: 16px;
-  text-align: justify;
   text-align: left;
   line-height: 1.5;
   letter-spacing: -0.2px;
   color: #8B8E99;
+}
+@media screen and (max-width: 768px) {
+  .main__container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .main__container .main__items {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    gap: 15px;
+  }
+  .main__container .main__items img {
+    padding: 10px;
+    width: 80px;
+  }
+  .main__container .main__items .txt {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .main__container .main__items .txt h1 {
+    font-size: 24px;
+  }
+  .main__container .main__items .txt p {
+    font-size: 14px;
+  }
 }
 
 .product__wrapper {
@@ -213,7 +315,6 @@ body {
   font-weight: 700;
   font-size: 35px;
   line-height: 125%;
-  letter-spacing: 0%;
   color: #000000;
 }
 .product__wrapper .product__title p {
@@ -221,7 +322,6 @@ body {
   font-weight: 700;
   font-size: 15px;
   line-height: 125%;
-  letter-spacing: 0%;
   color: #4823ad;
 }
 .product__wrapper .product__item {
@@ -240,7 +340,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   background-color: rgb(240, 240, 240);
   padding: 20px;
 }
@@ -256,7 +356,6 @@ body {
   font-weight: 700;
   font-size: 25px;
   line-height: 125%;
-  letter-spacing: 0%;
   color: #000000;
 }
 .product__wrapper .product__item .product__i .txt h2 {
@@ -264,7 +363,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 125%;
-  letter-spacing: 0%;
   color: #000000;
 }
 .product__wrapper .product__item .product__i .txt .price {
@@ -279,7 +377,6 @@ body {
   font-weight: 700;
   font-size: 25px;
   line-height: 125%;
-  letter-spacing: 0%;
   color: #000000;
 }
 .product__wrapper .product__item .product__i .txt .price h1 {
@@ -287,7 +384,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 125%;
-  letter-spacing: 0%;
   text-decoration: line-through;
   color: #000000;
   opacity: 50%;
@@ -299,8 +395,54 @@ body {
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px;
   font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+  .product__wrapper {
+    margin-top: 50px;
+    height: auto;
+    gap: 30px;
+  }
+  .product__wrapper .product__title h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .product__wrapper .product__title p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .product__wrapper .product__item {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .product__wrapper .product__item .product__i {
+    width: 80%;
+    padding: 15px;
+  }
+  .product__wrapper .product__item .product__i .txt {
+    gap: 5px;
+  }
+  .product__wrapper .product__item .product__i .txt h1 {
+    font-size: 20px;
+  }
+  .product__wrapper .product__item .product__i .txt h2 {
+    font-size: 16px;
+  }
+  .product__wrapper .product__item .product__i .txt .price {
+    gap: 8px;
+  }
+  .product__wrapper .product__item .product__i .txt .price h2 {
+    font-size: 20px;
+  }
+  .product__wrapper .product__item .product__i .txt .price h1 {
+    font-size: 16px;
+  }
+  .product__wrapper button {
+    width: 60%;
+    height: 60px;
+    font-size: 14px;
+  }
 }
 
 .about__wrapper {
@@ -387,13 +529,13 @@ body {
   text-align: left;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  color: #8B8E99;
+  color: #8b8e99;
 }
 .about__wrapper .about__users .pagination {
   position: absolute;
   left: 46%;
   top: 90%;
-  color: #8B8E99;
+  color: #8b8e99;
 }
 .about__wrapper .about__new {
   width: 100%;
@@ -431,7 +573,7 @@ body {
   text-align: left;
   line-height: 1.5;
   letter-spacing: -0.2px;
-  color: #8B8E99;
+  color: #8b8e99;
 }
 .about__wrapper .about__new .text__part .input__part {
   width: 70%;
@@ -463,15 +605,62 @@ body {
   font-size: 15px;
   font-family: Poppins;
 }
+@media (max-width: 768px) {
+  .about__wrapper .about__new .about__new {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .about__wrapper .about__new .text__part {
+    width: 100%;
+    text-align: center;
+  }
+  .about__wrapper .about__new h1 {
+    font-size: 28px;
+  }
+  .about__wrapper .about__new p {
+    font-size: 14px;
+  }
+  .about__wrapper .about__new .input__part {
+    width: 90%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about__wrapper .about__new .input__part input {
+    width: 100%;
+  }
+  .about__wrapper .about__new .input__part button {
+    width: 100%;
+    height: 40px;
+  }
+  .about__wrapper .about__new img {
+    width: 80%;
+    height: auto;
+  }
+}
 
 .footer__wrapper {
   background-color: #000;
-  width: 100%;
+  width: 96%;
   height: 10vh;
   color: #fff;
   display: grid;
   place-items: center;
   font-family: sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    font-size: 14px;
+    height: auto;
+    padding: 15px;
+  }
+  .footer__wrapper .footer__wrapper {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
